@@ -2,11 +2,34 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
 }
 
 .header {
     height: 7.5rem;
     background-color: #2266A1;
+    width: 100%;
+    position: fixed;
+}
+
+.header-behind{
+    background-color: rgb(255, 255, 255);
+    height: 7.5rem;
 }
 
 .header-sup{
@@ -22,8 +45,6 @@ html, body{
 }
 
 .menu-btn {
-    background: none;
-    border: none;
     background-image: url(./assets/icons/menu-white-24dp.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +55,51 @@ html, body{
     left: -2rem;
 }
 
+.drop-menu{
+    height: 100%;
+    background-color: #328CDA;
+    position: fixed;
+    right: 0;
+    animation: menuFadeIn 0.5s;
+}
+
+.drop-menu .close-btn{
+    background-image: url(./assets/icons/close-white-24dp.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem
+    
+}
+
+.drop-menu ul{
+    margin: 1.5rem;
+    margin-top: 4rem;
+    padding: 0;
+}
+
+.drop-menu ul li{
+    list-style-type: none;
+    margin-bottom: 1rem;
+
+}
+
 .header-lightbar{
     background-color: #328CDA;
     height: 7px;
+}
+
+@keyframes menuFadeIn{
+    from {
+        opacity: 0;
+        transform: translateX(6em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
