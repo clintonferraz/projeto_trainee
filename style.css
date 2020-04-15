@@ -1,0 +1,40 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 7.5rem;
+    background-color: #2266A1;
+}
+
+.header-sup{
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    left: 2rem;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    background-image: url(./assets/icons/menu-white-24dp.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    position: relative;
+    left: -2rem;
+}
+
+.header-lightbar{
+    background-color: #328CDA;
+    height: 7px;
+}
