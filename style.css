@@ -2,12 +2,17 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Cairo', sans-serif;
 }
 
 a, a:visited{
     text-decoration: none;
     color: white;
+}
+
+h1,p {
+    margin: 0;
+    padding: 0;
 }
 
 button{
@@ -23,8 +28,10 @@ button{
 .header {
     height: 7.5rem;
     background-color: #2266A1;
+    opacity: 0.9;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 .header-behind{
@@ -33,7 +40,7 @@ button{
 }
 
 .header-sup{
-    height: 7rem;
+    height: 7.1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,6 +68,18 @@ button{
     position: fixed;
     right: 0;
     animation: menuFadeIn 0.5s;
+    z-index: 2;
+}
+
+@keyframes menuFadeIn{
+    from {
+        opacity: 0;
+        transform: translateX(6em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .drop-menu .close-btn{
@@ -93,13 +112,15 @@ button{
     height: 7px;
 }
 
-@keyframes menuFadeIn{
-    from {
-        opacity: 0;
-        transform: translateX(6em);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.section-a{
+    padding: 2rem 3rem 3.5rem 3rem;
+}
+
+.section-a h1{
+    padding-bottom: 1.5rem;
+    color: #5C5C5C;
+}
+
+.section-a p{
+    font-weight: 600;
 }

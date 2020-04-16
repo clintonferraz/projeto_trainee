@@ -1,0 +1,110 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;   
+    transition: transform 800ms ease-in-out; 
+    display: flex;
+    
+}
+
+.slider-item{
+    width: 100%;
+    height: 100%;
+}
+
+.slider-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-button{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0.8;
+    border: none;
+    width: 5rem;
+    height: 100%;
+    cursor: pointer;    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30%;
+    outline: none;
+    
+}
+
+.prev{
+    background-image: url(./arrow.svg);
+    left: 0;
+}
+
+.prev:hover{
+    background: url(./arrow.svg), linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position:  center;
+    background-size: 40% ,auto;
+    opacity: 1; 
+}
+
+.next{
+    background-image: url(./arrow_right.svg);
+    right: 0;
+}  
+.next:hover{
+    background: url(./arrow_right.svg), linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7)  100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position:  center;
+    background-size: 40% ,auto;
+    opacity: 1; 
+}
+
+.slider-nav{
+    position: relative;
+    top:-1.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-indicator{
+    height: 1rem;
+    width: 0.8rem;
+    transform: scale(0.8);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    outline: none;
+    opacity: 0.8;
+}
+
+.slider-indicator.current{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    transform: scale(1);
+    transition: transform 500ms linear, background-color 500ms linear; 
+    opacity: 1;
+}
+
+.is-hidden{
+    display: none;
+}

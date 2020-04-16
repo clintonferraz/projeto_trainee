@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSC - Goiás Sem Covid</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/slider/slider.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+  
+
+
     <div class="header">
         <div class="header-sup">
             <a class="logo" href="index.html"><img src="./assets/logo.svg" alt="Goiás Sem Covid"></a>
@@ -29,7 +34,53 @@
 
     <div class="header-behind"></div>
 
+    <div class="slider">
+      
+        <div class="slider-inner">
+
+            <div class="slider-item active">
+                <img src="assets/slider/image1.jpg" alt="">
+            </div>
+
+            <div class="slider-item">
+                <img src="assets/slider/image2.jpg" alt="">
+            </div>
+
+            <div class="slider-item">
+                <img src="assets/slider/image3.jfif" alt="">
+            </div> 
+
+        </div>
+        
+        <button class="slider-button prev is-hidden"></button>
+
+        <button class="slider-button next"></button>
+
+        <div class="slider-nav">
+            <button class="slider-indicator current"></button>
+            <button class="slider-indicator"></button>
+            <button class="slider-indicator"></button>
+        </div>
+        
+    </div>
+
+    <div class="section-a">
+        <h1>Quem Somos</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis eleifend justo, eget fermentum justo. 
+            Nunc feugiat justo sed tincidunt luctus. Quisque ornare, nulla ac vulputate dictum, nisi nisl pellentesque 
+            nibh, sed vestibulum eros est ut lectus. Etiam in pulvinar nibh. Nulla ultricies nibh sed sapien condimentum 
+            venenatis. Vivamus maximus accumsan porta. Donec semper erat est, quis dignissim libero iaculis in. 
+        </p>
+
+
+    </div>
+
+
+    <script src="./assets/slider/slider.js"></script>
     <script src="index.js"></script>
+
+
 
 </body>
 </html>
