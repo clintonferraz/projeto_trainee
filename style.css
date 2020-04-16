@@ -1,8 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body{
     height: 100%;
+    font-family: 'Cairo', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Cairo', sans-serif;
 }
 
 a, a:visited{
@@ -13,6 +17,10 @@ a, a:visited{
 h1,p {
     margin: 0;
     padding: 0;
+}
+
+img {
+    display: block;
 }
 
 button{
@@ -26,7 +34,7 @@ button{
 }
 
 .header {
-    height: 7.5rem;
+    height: 6.5rem;
     background-color: #2266A1;
     opacity: 0.9;
     width: 100%;
@@ -36,14 +44,19 @@ button{
 
 .header-behind{
     background-color: rgb(255, 255, 255);
-    height: 7.5rem;
+    height: 6.5rem;
 }
 
 .header-sup{
-    height: 7.1rem;
+    height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header-lightbar{
+    background-color: #328CDA;
+    height: 0.5rem;
 }
 
 .logo {
@@ -91,8 +104,7 @@ button{
     outline: none;
     position: absolute;
     right: 1rem;
-    top: 0.5rem
-    
+    top: 0.5rem;
 }
 
 .drop-menu ul{
@@ -107,13 +119,9 @@ button{
 
 }
 
-.header-lightbar{
-    background-color: #328CDA;
-    height: 7px;
-}
-
 .section-a{
     padding: 2rem 3rem 3.5rem 3rem;
+    background-color: #E8F5FF;
 }
 
 .section-a h1{
@@ -123,4 +131,116 @@ button{
 
 .section-a p{
     font-weight: 600;
+}
+
+.section-b {
+    position: relative;
+    color: #fff;
+    padding: 2rem;
+    height: 25rem;
+}
+
+.section-b .background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(./assets/images/image1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 25rem;
+    z-index: -2;
+}
+
+.section-b .filterLayer{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 25rem;
+    width: 100%;
+    background-color: rgb(0, 19, 80);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.section-b h2{
+    text-align: center;
+
+}
+
+.section-b p{
+    line-height: 3.5rem;
+    font-size: 1.1rem;
+}
+
+.section-c {
+    background-color: #E8F5FF;
+    padding: 3rem 3rem 3.5rem 3rem;
+    font-weight: 600;
+}
+
+.section-c button{
+    display: block;
+    margin: auto;
+    background-color: #328CDA;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 0.4rem 3.5rem 0.4rem 3.5rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.section-c button:hover{
+    background-color: rgb(62, 111, 202);
+}
+
+.footer{
+    height: 6.5rem;
+    width: 100%;
+    background-color: #272D2D;
+}
+
+@media (min-width: 730px){
+    .section-a{
+        padding: 2rem 0 2rem 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .section-a h1{
+        min-width: 13rem;
+        margin: 3rem;
+    
+    }
+
+    .section-b p{
+        margin-left: 15%;
+    }
+
+    .section-c{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+   
+    .section-c button{
+        min-width: 15rem;
+        margin: 0;
+        margin-left: 4rem;
+    
+    }
+
+}
+
+@media (min-width: 830px){
+
+
+
+
+
+
 }

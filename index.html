@@ -1,86 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GSC - Goiás Sem Covid</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./assets/slider/slider.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
 
-  
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GSC - Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./assets/slider/slider.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
 
+    <body>
 
-    <div class="header">
-        <div class="header-sup">
-            <a class="logo" href="index.html"><img src="./assets/logo.svg" alt="Goiás Sem Covid"></a>
-            <button class="menu-btn" onclick="showMenu()"></button>
-        </div>
-        <div class="header-lightbar"></div>
-    </div>
-
-    <div class="drop-menu hidden">
-        <button class="close-btn" onclick="hideMenu()"></button>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#">SOBRE</a></li>
-            <li><a href="#">ÁREAS DE ATUAÇÃO</a></li>
-            <li><a href="#">DOAÇÕES</a></li>
-            <li><a href="#">CONTATO</a></li>
-        </ul>
-    </div>
-
-    <div class="header-behind"></div>
-
-    <div class="slider">
-      
-        <div class="slider-inner">
-
-            <div class="slider-item active">
-                <img src="assets/slider/image1.jpg" alt="">
+        <div class="header">
+            <div class="header-sup">
+                <a class="logo" href="index.html"><img src="./assets/logo.svg" alt="Goiás Sem Covid"></a>
+                <button class="menu-btn" onclick="showMenu()"></button>
             </div>
+            <div class="header-lightbar"></div>
+        </div>
 
-            <div class="slider-item">
-                <img src="assets/slider/image2.jpg" alt="">
+        <div class="drop-menu hidden">
+            <button class="close-btn" onclick="hideMenu()"></button>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">SOBRE</a></li>
+                <li><a href="#">ÁREAS DE ATUAÇÃO</a></li>
+                <li><a href="#">DOAÇÕES</a></li>
+                <li><a href="#">CONTATO</a></li>
+            </ul>
+        </div>
+
+        <div class="header-behind"></div>
+
+        <div class="slider">
+        
+            <div class="slider-inner">
+
+                <div class="slider-item active">
+                    <img src="assets/slider/image1.jpg" alt="">
+                </div>
+
+                <div class="slider-item">
+                    <img src="assets/slider/image2.jpg" alt="">
+                </div>
+
+                <div class="slider-item">
+                    <img src="assets/slider/image3.jfif" alt="">
+                </div> 
+
             </div>
+            
+            <button class="slider-button prev is-hidden"></button>
 
-            <div class="slider-item">
-                <img src="assets/slider/image3.jfif" alt="">
-            </div> 
+            <button class="slider-button next"></button>
+
+            <div class="slider-nav">
+                <button class="slider-indicator current"></button>
+                <button class="slider-indicator"></button>
+                <button class="slider-indicator"></button>
+            </div>
+            
+        </div>
+
+        <div class="section-a">
+            <h1>Quem Somos</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis eleifend justo, eget fermentum justo. 
+                Nunc feugiat justo sed tincidunt luctus. Quisque ornare, nulla ac vulputate dictum, nisi nisl pellentesque 
+                nibh, sed vestibulum eros est ut lectus. Etiam in pulvinar nibh. Nulla ultricies nibh sed sapien condimentum 
+                venenatis. Vivamus maximus accumsan porta. Donec semper erat est, quis dignissim libero iaculis in. 
+            </p>
+        </div>
+
+        <div class="section-b">
+            
+            <div class="background-image"></div>
+
+            <div class="filterLayer"></div>
+
+            <h2>Covid-19 em Goiás</h2>
+            <p>
+                Casos suspeitos:<br>
+                Casos confirmados:<br>
+                Número de óbitos: <br>
+                Última atualização: 
+
+            </p>
 
         </div>
-        
-        <button class="slider-button prev is-hidden"></button>
 
-        <button class="slider-button next"></button>
+        <div class="section-c">
+            <button>DOE AGORA</button>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis eleifend justo, eget fermentum justo. 
+                Nunc feugiat justo sed tincidunt luctus. Quisque ornare, nulla ac vulputate dictum, nisi nisl pellentesque 
+                nibh, sed vestibulum eros est ut lectus. Etiam in pulvinar nibh. Nulla ultricies nibh sed sapien condimentum 
+                venenatis. 
+            </p>
 
-        <div class="slider-nav">
-            <button class="slider-indicator current"></button>
-            <button class="slider-indicator"></button>
-            <button class="slider-indicator"></button>
         </div>
-        
-    </div>
 
-    <div class="section-a">
-        <h1>Quem Somos</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis eleifend justo, eget fermentum justo. 
-            Nunc feugiat justo sed tincidunt luctus. Quisque ornare, nulla ac vulputate dictum, nisi nisl pellentesque 
-            nibh, sed vestibulum eros est ut lectus. Etiam in pulvinar nibh. Nulla ultricies nibh sed sapien condimentum 
-            venenatis. Vivamus maximus accumsan porta. Donec semper erat est, quis dignissim libero iaculis in. 
-        </p>
+        <div class="footer"></div>
 
+        <script src="./assets/slider/slider.js"></script>
+        <script src="index.js"></script>
 
-    </div>
+    </body>
 
-
-    <script src="./assets/slider/slider.js"></script>
-    <script src="index.js"></script>
-
-
-
-</body>
 </html>
