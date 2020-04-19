@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GSC - Home</title>
+        <title>GSC - Doações</title>
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/donations.css">
         <link rel="stylesheet" href="./assets/slider/slider.css">
@@ -14,94 +14,110 @@
     <body>
         <div class="container">
 
-        
-        <div class="header">
             
-                <a class="logo" href="index.html"><img src="./assets/logo.svg" alt="Goiás Sem Covid"></a>
-                <div class="nav-bar">
+            <div class="header">
+                
+                    <a class="logo" href="index.html"><img src="./assets/images/logo.svg" alt="Goiás Sem Covid"></a>
+                    <div class="nav-bar">
 
-                    <div class="social-media">
-                        <a href="#"><img src="./assets/icons/facebook1.svg" alt=""></a>
-                        <a href="#"><img src="./assets/icons/instagram1.svg" alt=""></a>
-                        <a href="#"><img src="./assets/icons/twitter1.svg" alt=""></a>
-                        <a href="#"><img src="./assets/icons/whatsapp1.svg" alt=""></a>
+                        <div class="social-media">
+                            <a href="#"><img src="./assets/icons/facebook1.svg" alt=""></a>
+                            <a href="#"><img src="./assets/icons/instagram1.svg" alt=""></a>
+                            <a href="#"><img src="./assets/icons/twitter1.svg" alt=""></a>
+                            <a href="#"><img src="./assets/icons/whatsapp1.svg" alt=""></a>
+                        </div>
+
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">SOBRE</a></li>
+                            <li><a href="#">ÁREAS DE ATUAÇÃO</a></li>
+                            <li><a href="donations.html">DOAÇÕES</a></li>
+                            <li><a href="contact.html">CONTATO</a></li>
+                        </ul>
+
                     </div>
 
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">SOBRE</a></li>
-                        <li><a href="#">ÁREAS DE ATUAÇÃO</a></li>
-                        <li><a href="donations.html">DOAÇÕES</a></li>
-                        <li><a href="contact.html">CONTATO</a></li>
-                    </ul>
+                    <button class="menu-btn" onclick="showMenu()"></button>
+                
+            </div>
 
+            <div class="drop-menu hidden">
+                <button class="close-btn" onclick="hideMenu()"></button>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">SOBRE</a></li>
+                    <li><a href="#">ÁREAS DE ATUAÇÃO</a></li>
+                    <li><a href="donations.html">DOAÇÕES</a></li>
+                    <li><a href="contact.html">CONTATO</a></li>
+                </ul>
+                <div class="dropMenuSocial">
+                    <ul>   
+                        <li> <a href="#"><img src="./assets/icons/facebook1.svg" alt=""></a> </li>
+                        <li> <a href="#"><img src="./assets/icons/instagram1.svg" alt=""></a> </li>
+                        <li> <a href="#"><img src="./assets/icons/twitter1.svg" alt=""></a> </li>
+                        <li> <a href="#"><img src="./assets/icons/whatsapp1.svg" alt=""></a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-behind"></div>
+
+            
+
+            <div class="section-a">
+                <h1>Sua doação pode salvar uma vida!</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, qui. Est optio minus quas nisi aspernatur ipsum cumque. Minima, pariatur, aut aliquam sit quidem soluta maiores repellat officia magni, a distinctio repellendus? Atque repellat neque repellendus esse architecto id soluta! Ratione architecto quidem debitis laborum, blanditiis temporibus autem similique maiores! Alias quis, modi in perferendis excepturi eum dolorum. Deserunt officiis magni veritatis eligendi eius.
+                </p>
+            </div>
+            <div class="section-b">
+
+                <h2>Informações do doador:</h2>
+
+                <label for="first_name_input">Primeiro Nome:</label><br>
+                <input type="text" id="first_name_input" ><br>
+                
+                <label for="surname_input">Sobrenome:</label><br>
+                <input type="text" id="surname_input" ><br>
+
+                <label for="email_input">E-mail:</label><br>
+                <input type="text" id="email_input" ><br>
+
+                <label for="cpf_input">CPF:</label><br>
+                <input type="text" id="cpf_input" ><br>
+
+                <h3>Endereço:</h3>
+
+                <label for="cep_input">CEP:</label><br>
+                <input type="number" id="cep_input" max="8" onkeyup="onValueChange(),onCepInputKeyDown()" onkeydown="onCepInputKeyDown()"><br>
+
+                <div class="city-uf">
+
+                    <div class="cityDiv">
+                        <label for="city_input">Cidade:</label><br> 
+                        <input type="text" id="city_input" > 
+                    </div>
+                    
+                    <div class="ufDiv">
+                        <label for="uf_input">UF:</label><br>
+                        <input type="text" id="uf_input" maxlength="2">
+                    </div>
                 </div>
 
-                <button class="menu-btn" onclick="showMenu()"></button>
-            
-        </div>
+                <label for="street_input">Rua:</label> <br>
+                <input type="text" id="street_input" ><br>
 
-        <div class="drop-menu hidden">
-            <button class="close-btn" onclick="hideMenu()"></button>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">SOBRE</a></li>
-                <li><a href="#">ÁREAS DE ATUAÇÃO</a></li>
-                <li><a href="donations.html">DOAÇÕES</a></li>
-                <li><a href="contact.html">CONTATO</a></li>
-            </ul>
-            <div class="dropMenuSocial">
-                <ul>   
-                    <li> <a href="#"><img src="./assets/icons/facebook1.svg" alt=""></a> </li>
-                    <li> <a href="#"><img src="./assets/icons/instagram1.svg" alt=""></a> </li>
-                    <li> <a href="#"><img src="./assets/icons/twitter1.svg" alt=""></a> </li>
-                    <li> <a href="#"><img src="./assets/icons/whatsapp1.svg" alt=""></a> </li>
-                </ul>
+                <button>DOE</button>
+
             </div>
-        </div>
 
-        <div class="header-behind"></div>
+            <div class="footer"></div>
 
+
+            <script src="./js/main.js"></script>
+            <script src="./js/donations.js"></script>
         
-
-        <div class="section-a">
-            <h1>Sua doação pode salvar uma vida!</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, qui. Est optio minus quas nisi aspernatur ipsum cumque. Minima, pariatur, aut aliquam sit quidem soluta maiores repellat officia magni, a distinctio repellendus? Atque repellat neque repellendus esse architecto id soluta! Ratione architecto quidem debitis laborum, blanditiis temporibus autem similique maiores! Alias quis, modi in perferendis excepturi eum dolorum. Deserunt officiis magni veritatis eligendi eius.
-            </p>
         </div>
-        <div class="section-b">
-            <h2>Informações do doador:</h2>
-            <label for="first_name_input">Primeiro Nome:</label><br>
-            <input type="text" name="gender" id="first_name_input" ><br>
-            
-            <label for="surname_input">Sobrenome:</label><br>
-            <input type="text" name="gender" id="surname_input" ><br>
-
-            <label for="email_input">E-mail:</label><br>
-            <input type="text" name="gender" id="email_input" ><br>
-
-            <label for="cpf_input">CPF:</label><br>
-            <input type="text" name="gender" id="cpf_input" ><br>
-
-            <h3>Endereço:</h3>
-
-            <label for="cep_input">CEP:</label><br>
-            <input type="text" name="gender" id="cep_input" ><br>
-
-            <label for="street_input">Rua:</label><br>
-            <input type="text" name="gender" id="street_input" ><br>
-
-            <button>DOE</button>
-
-        </div>
-
-        <div class="footer"></div>
-
-
-        <script src="index.js"></script>
-        
-    </div>
     </body>
 
 </html>

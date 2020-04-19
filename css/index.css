@@ -11,9 +11,10 @@
 
 .section-b {
     position: relative;
-    color: #fff;
+    color: #E8F5FF;
     padding: 2rem;
     height: 25rem;
+    display: none;
 }
 
 .section-b .background-image{
@@ -46,8 +47,20 @@
     z-index: 2;
 }
 
+.section-b-text span{
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    color: #E8F5FF;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+
+}
+
 .section-b h2{
     text-align: center;
+    font-size: 1.8rem;
+
 
 }
 

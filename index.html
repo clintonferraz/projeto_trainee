@@ -14,10 +14,10 @@
     <body>
         <div class="container">
 
-        
-        <div class="header">
-            
-                <a class="logo" href="index.html"><img src="./assets/logo.svg" alt="Goiás Sem Covid"></a>
+            <div class="header">
+                
+                <a class="logo" href="index.html"><img src="./assets/images/logo.svg" alt="Goiás Sem Covid"></a>
+
                 <div class="nav-bar">
 
                     <div class="social-media">
@@ -38,106 +38,106 @@
                 </div>
 
                 <button class="menu-btn" onclick="showMenu()"></button>
-            
-        </div>
+                
+            </div>
 
-        <div class="drop-menu hidden">
-            <button class="close-btn" onclick="hideMenu()"></button>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">SOBRE</a></li>
-                <li><a href="#">ÁREAS DE ATUAÇÃO</a></li>
-                <li><a href="donations.html">DOAÇÕES</a></li>
-                <li><a href="contact.html">CONTATO</a></li>
-            </ul>
-            <div class="dropMenuSocial">
-                <ul>   
-                    <li> <a href="#"><img src="./assets/icons/facebook1.svg" alt=""></a> </li>
-                    <li> <a href="#"><img src="./assets/icons/instagram1.svg" alt=""></a> </li>
-                    <li> <a href="#"><img src="./assets/icons/twitter1.svg" alt=""></a> </li>
-                    <li> <a href="#"><img src="./assets/icons/whatsapp1.svg" alt=""></a> </li>
+            <div class="drop-menu hidden">
+                <button class="close-btn" onclick="hideMenu()"></button>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">SOBRE</a></li>
+                    <li><a href="#">ÁREAS DE ATUAÇÃO</a></li>
+                    <li><a href="donations.html">DOAÇÕES</a></li>
+                    <li><a href="contact.html">CONTATO</a></li>
                 </ul>
-            </div>
-        </div>
-
-        <div class="header-behind"></div>
-
-        <div class="slider">
-        
-            <div class="slider-inner">
-
-                <div class="slider-item active">
-                    <img src="assets/slider/image1.jpg" alt="">
+                <div class="dropMenuSocial">
+                    <ul>   
+                        <li> <a href="#"><img src="./assets/icons/facebook1.svg" alt=""></a> </li>
+                        <li> <a href="#"><img src="./assets/icons/instagram1.svg" alt=""></a> </li>
+                        <li> <a href="#"><img src="./assets/icons/twitter1.svg" alt=""></a> </li>
+                        <li> <a href="#"><img src="./assets/icons/whatsapp1.svg" alt=""></a> </li>
+                    </ul>
                 </div>
+            </div>
 
-                <div class="slider-item">
-                    <img src="assets/slider/image2.jpg" alt="">
+            <div class="header-behind"></div>
+
+            <div class="slider">
+            
+                <div class="slider-inner">
+
+                    <div class="slider-item active">
+                        <img src="assets/slider/image1.jpg" alt="">
+                    </div>
+
+                    <div class="slider-item">
+                        <img src="assets/slider/image2.jpg" alt="">
+                    </div>
+
+                    <div class="slider-item">
+                        <img src="assets/slider/image3.jfif" alt="">
+                    </div> 
+
                 </div>
+                
+                <button class="slider-button prev is-hidden"></button>
 
-                <div class="slider-item">
-                    <img src="assets/slider/image3.jfif" alt="">
-                </div> 
+                <button class="slider-button next"></button>
 
+                <div class="slider-nav">
+                    <button class="slider-indicator current"></button>
+                    <button class="slider-indicator"></button>
+                    <button class="slider-indicator"></button>
+                </div>
+                
             </div>
-            
-            <button class="slider-button prev is-hidden"></button>
 
-            <button class="slider-button next"></button>
-
-            <div class="slider-nav">
-                <button class="slider-indicator current"></button>
-                <button class="slider-indicator"></button>
-                <button class="slider-indicator"></button>
-            </div>
-            
-        </div>
-
-        <div class="section-a">
-            <h1>Quem Somos</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis eleifend justo, eget fermentum justo. 
-                Nunc feugiat justo sed tincidunt luctus. Quisque ornare, nulla ac vulputate dictum, nisi nisl pellentesque 
-                nibh, sed vestibulum eros est ut lectus. Etiam in pulvinar nibh. Nulla ultricies nibh sed sapien condimentum 
-                venenatis. Vivamus maximus accumsan porta. Donec semper erat est, quis dignissim libero iaculis in. 
-            </p>
-        </div>
-
-        <div class="section-b">
-            
-            <div class="background-image"></div>
-            <div class="filterLayer"></div>
-            <div class="section-b-text">
-                <h2>Covid-19 em Goiás</h2>
+            <div class="section-a">
+                <h1>Quem Somos</h1>
                 <p>
-                    Casos suspeitos:<br>
-                    Casos confirmados:<br>
-                    Número de óbitos: <br>
-                    Última atualização: 
-    
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis eleifend justo, eget fermentum justo. 
+                    Nunc feugiat justo sed tincidunt luctus. Quisque ornare, nulla ac vulputate dictum, nisi nisl pellentesque 
+                    nibh, sed vestibulum eros est ut lectus. Etiam in pulvinar nibh. Nulla ultricies nibh sed sapien condimentum 
+                    venenatis. Vivamus maximus accumsan porta. Donec semper erat est, quis dignissim libero iaculis in. 
                 </p>
             </div>
 
- 
+            <div class="section-b">
+                
+                <div class="background-image"></div>
+                <div class="filterLayer"></div>
+                <div class="section-b-text">
+                    <h2>Coronavírus em Goiás</h2>
+                    <p>
+                        Casos suspeitos: <span id="suspeitos" ></span><br>
+                        Casos confirmados: <span id="confirmados" ></span><br>
+                        Número de óbitos: <span id="obitos" ></span><br>
+                        Última atualização: <span id="lastUpdate" ></span>
+                    </p>
+                </div>
 
-        </div>
+    
 
-        <div class="section-c">
-            <button onclick="location.href='./donations.html'">DOE AGORA</button>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis eleifend justo, eget fermentum justo. 
-                Nunc feugiat justo sed tincidunt luctus. Quisque ornare, nulla ac vulputate dictum, nisi nisl pellentesque 
-                nibh, sed vestibulum eros est ut lectus. Etiam in pulvinar nibh. Nulla ultricies nibh sed sapien condimentum 
-                venenatis. 
-            </p>
+            </div>
 
-        </div>
+            <div class="section-c">
+                <button onclick="location.href='./donations.html'">DOE AGORA</button>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis eleifend justo, eget fermentum justo. 
+                    Nunc feugiat justo sed tincidunt luctus. Quisque ornare, nulla ac vulputate dictum, nisi nisl pellentesque 
+                    nibh, sed vestibulum eros est ut lectus. Etiam in pulvinar nibh. Nulla ultricies nibh sed sapien condimentum 
+                    venenatis. 
+                </p>
 
-        <div class="footer"></div>
+            </div>
 
-        <script src="./assets/slider/slider.js"></script>
-        <script src="index.js"></script>
+            <div class="footer"></div>
+
+            <script src="./assets/slider/slider.js"></script>
+            <script src="./js/main.js"></script>
+            <script src="./js/index.js"></script>
         
-    </div>
+        </div>
     </body>
 
 </html>
