@@ -6,10 +6,9 @@ onValueChange = () => {
     if(newCepInputValue != oldCepInputValue){
 
         if(newCepInputValue.length === 8){
-            fetch('http://viacep.com.br/ws/'+newCepInputValue+'/json/')
+            fetch('https://viacep.com.br/ws/'+newCepInputValue+'/json/')
             .then(resp => resp.json())
             .then(data => {
-                console.log(data);
                 if(!data.erro){
                     document.getElementById('city_input').value = data.localidade;
                     document.getElementById('street_input').value = data.logradouro;

@@ -13,7 +13,7 @@
     position: relative;
     color: #E8F5FF;
     padding: 2rem;
-    height: 25rem;
+    height: 26rem;
     display: none;
 }
 
@@ -27,7 +27,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 25rem;
+    height: 26rem;
     z-index: 0;
 }
 
@@ -35,9 +35,9 @@
     position: absolute;
     top:0;
     left: 0;
-    height: 25rem;
+    height: 26rem;
     width: 100%;
-    background-color: rgb(0, 19, 80);
+    background-color: rgb(0, 106, 133);
     opacity: 0.6;
     z-index: 1;
 }
@@ -45,6 +45,7 @@
 .section-b-text{
     position: relative;
     z-index: 2;
+    text-shadow: 2px 2px rgb(0, 0, 0);
 }
 
 .section-b-text span{
@@ -83,20 +84,21 @@
     font-size: 1.3rem;
     font-weight: 600;
     color: #fff;
+    text-shadow: 1px 1px #000;
     padding: 0.4rem 3.5rem 0.4rem 3.5rem;
     border-radius: 5px;
     margin-bottom: 2rem;
 }
 
 .section-c button:hover{
-    background-color: rgb(62, 111, 202);
+    background-color: rgb(25, 82, 133);
 }
 
 
 
 @media (min-width: 730px){
     .section-a{
-        padding: 2rem 0 2rem 0;
+        padding: 2rem 5rem 2rem 0;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
