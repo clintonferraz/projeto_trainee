@@ -1,0 +1,62 @@
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+h1{
+    color: rgb(15, 79, 153);
+}
+
+.section-a{
+    padding: 2rem 3rem 3.5rem 3rem;
+    background-color: #E8F5FF;
+    font-weight: 600;
+    width: 50vw;
+
+}
+
+.section-b{
+    width: 50vw;
+    background-color: rgb(158, 196, 211);
+    color: rgb(0, 0, 0);
+}
+
+.section-b p{
+    font-weight: 600;
+}
+
+.section-b h2{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(0, 107, 150);
+    font-size: 1.8rem;
+}
+
+.missao{
+    padding: 2rem 4rem 0rem 4rem;
+}
+
+.visao{
+    padding: 2rem 4rem 0rem 4rem;
+    
+}
+
+.valores{
+    padding: 2rem 4rem 3rem 4rem;
+}
+
+@media (max-width: 780px){
+    .content{
+        display: inline;
+    }
+
+    .section-a{
+        width: auto;
+    }
+
+    .section-b{
+        width: auto;
+    }
+    
+
+}

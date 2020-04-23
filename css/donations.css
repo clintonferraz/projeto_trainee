@@ -18,6 +18,15 @@ input[type=number] {
 .section-a h1{
     padding-bottom: 1.5rem;
     line-height: 2.1rem;
+    color: rgb(15, 79, 153);
+}
+
+.dados{
+    margin: auto;
+    max-width: 30rem;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 5px;
 }
 
 .section-b{
@@ -41,8 +50,9 @@ input[type=number] {
     width: 100%;
     max-width: 25rem;
     padding: 0 0 0 0.6rem;
-    border: solid 1px #BBB;
-    border-radius: 5px;
+    border: solid 1px rgb(78, 78, 78);
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
 
 
 }

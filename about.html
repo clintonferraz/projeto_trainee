@@ -6,49 +6,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GSC - Sobre</title>
         <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./assets/slider/slider.css">
+        <link rel="stylesheet" href="./css/about.css">
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <div class="container">
-
         
-            <div class="header">
+        <div class="container">
+        
+            <header class="header">
                 
-                    <a class="logo" href="index.html"><img src="./assets/images/logo.svg" alt="Goiás Sem Covid"></a>
-                    <div class="nav-bar">
+                <a class="logo" href="index.html"><img src="./assets/images/logo.svg" alt="Goiás Sem Covid"></a>
 
-                        <div class="social-media">
-                            <a href="#"><img src="./assets/icons/facebook1.svg" alt=""></a>
-                            <a href="#"><img src="./assets/icons/instagram1.svg" alt=""></a>
-                            <a href="#"><img src="./assets/icons/twitter1.svg" alt=""></a>
-                            <a href="#"><img src="./assets/icons/whatsapp1.svg" alt=""></a>
-                        </div>
+                <nav class="nav-bar">
 
-                        <ul>
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="about.html">SOBRE</a></li>
-                            <li><a href="#">ÁREAS DE ATUAÇÃO</a></li>
-                            <li><a href="donations.html">DOAÇÕES</a></li>
-                            <li><a href="contact.html">CONTATO</a></li>
-                        </ul>
-
+                    <div class="social-media">
+                        <a href="#"><img src="./assets/icons/facebook1.svg" alt=""></a>
+                        <a href="#"><img src="./assets/icons/instagram1.svg" alt=""></a>
+                        <a href="#"><img src="./assets/icons/twitter1.svg" alt=""></a>
+                        <a href="#"><img src="./assets/icons/whatsapp1.svg" alt=""></a>
                     </div>
 
-                    <button class="menu-btn" onclick="showMenu()"></button>
-                
-            </div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">SOBRE</a></li>
+                        <li><a href="#">ÁREAS DE ATUAÇÃO</a></li>
+                        <li><a href="donations.html">DOAÇÕES</a></li>
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
 
-            <div class="drop-menu hidden">
+                </nav>
+
+                <button class="menu-btn" onclick="showMenu()"></button>
+                
+            </header>
+
+            <nav class="drop-menu hidden">
+
                 <button class="close-btn" onclick="hideMenu()"></button>
+
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">SOBRE</a></li>
                     <li><a href="#">ÁREAS DE ATUAÇÃO</a></li>
                     <li><a href="donations.html">DOAÇÕES</a></li>
-                    <li><a href="contact.html">CONTATO</a></li>
+                    <li><a href="#">CONTATO</a></li>
                 </ul>
+
                 <div class="dropMenuSocial">
                     <ul>   
                         <li> <a href="#"><img src="./assets/icons/facebook1.svg" alt=""></a> </li>
@@ -57,20 +61,63 @@
                         <li> <a href="#"><img src="./assets/icons/whatsapp1.svg" alt=""></a> </li>
                     </ul>
                 </div>
-            </div>
+
+            </nav>
 
             <div class="header-behind"></div>
-    
-            <div class="section-a">
 
-            </div>
+            <main class="content">
 
-            <div class="footer"></div>
+                <section class="section-a">
+                    <h1>Sobre a GSC</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur, error, illo fuga atque est voluptate quis iure in ipsam reiciendis voluptates magni obcaecati cum architecto veritatis voluptas dolor eos corrupti aliquam distinctio nobis molestias! Earum, ullam consectetur quis placeat veritatis ipsum aperiam quod tenetur dolorum unde eligendi eveniet officia quaerat saepe, quam porro, non amet. Sed delectus animi, velit minima mollitia fugit, a magni error voluptates fugiat deleniti quas obcaecati culpa doloremque beatae, necessitatibus eaque labore odio nostrum repellat nesciunt exercitationem adipisci sequi in. Laborum vitae accusantium quod libero iste, odio eum quasi labore deleniti voluptatum earum, porro nihil minima. Fugiat similique iste tempore architecto ipsa, eligendi praesentium. 
+                    </p>
+                </section>
 
-            <script src="./assets/slider/slider.js"></script>
+                <div class="section-b">
+
+                    <section class="missao">
+
+                        <h2>Missão</h2>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur, error, illo fuga atque est voluptate quis iure in ipsam reiciendis voluptates magni obcaecati cum architecto.
+                        </p>                
+        
+                    </section>
+        
+        
+                    <section class="visao">
+
+                        <h2>Visão</h2>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur, error, illo fuga atque est voluptate quis iure in ipsam reiciendis voluptates magni obcaecati cum architecto veritatis voluptas dolor eos corrupti.
+                        </p>
+                        
+                    </section>
+        
+                    <section class="valores">
+
+                        <h2>Valores</h2>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur, error, illo fuga atque est voluptate quis iure in ipsam reiciendis voluptates magni obcaecati cum architecto veritatis voluptas dolor eos corrupti aliquam distinctio nobis molestias!
+                        </p>
+
+                    </section>
+
+                </div>
+
+            </main>
+        
+            <footer class="footer"></footer>
+
             <script src="./js/main.js"></script>
         
         </div>
+
     </body>
 
 </html>
